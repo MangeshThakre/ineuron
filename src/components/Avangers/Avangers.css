@@ -3,12 +3,28 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-margin: 4rem 0;
+  margin: 4rem 0;
+  position: relative;
 }
 
-.Avangers-sec-head{
-    color: #022ab5;
-    margin: 3rem;
+
+
+.Avangers-sec> .previous{
+position: absolute;
+left:5%;
+top: 60%;
+
+}
+.Avangers-sec> .next{
+  position: absolute;
+  right:5%;
+  top: 60%;
+  }
+
+
+.Avangers-sec-head {
+  color: #022ab5;
+  margin: 3rem;
 }
 
 .Avangers-sec-container {
@@ -23,10 +39,8 @@ margin: 4rem 0;
 }
 
 .Avangers-sec-container::-webkit-scrollbar {
-display: none;
+  display: none;
 }
-
-
 
 .Avangers-sec-box {
   margin: 3rem;
@@ -40,15 +54,13 @@ display: none;
   color: whitesmoke;
 }
 
-.Avangers-sec-container >.one{
-    background-color: #434954;
+.Avangers-sec-container > .one {
+  background-color: #434954;
 }
 
-
-.Avangers-sec-container >.two{
-    background-color: hsla(240, 13.79%, 22.75%, 1.00);
+.Avangers-sec-container > .two {
+  background-color: hsla(240, 13.79%, 22.75%, 1);
 }
-
 
 .Avangers-sec-box > div {
   margin: 15px;
@@ -75,29 +87,26 @@ display: none;
   border-radius: 50%;
 }
 
+@media (max-width: 400px) {
+  .Avangers-sec-box > div {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 22rem;
+  }
 
-@media (max-width :400px) {
-    .Avangers-sec-box > div {
-        margin: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 15rem;
-        height: 22rem;
-      }
-
-      .Avangers-sec-box {
-        margin: 3rem 2rem 3rem  1rem;
-        border-radius: 16px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        cursor: pointer;
-        background-image: url("../../assets/svgs/5e387f889619c7aa4db2ed8c_Press\ Background\ Pattern.svg");
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        color: whitesmoke;
-      }
-
-
+  .Avangers-sec-box {
+    margin: 3rem 2rem 3rem 1rem;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    background-image: url("../../assets/svgs/5e387f889619c7aa4db2ed8c_Press\ Background\ Pattern.svg");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: whitesmoke;
+  }
 }

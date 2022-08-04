@@ -5,11 +5,13 @@
   position: fixed;
   height: 5rem;
   justify-content: center;
-  background-image: url("../../assets/svgs/background_hd.1abd4d4e.svg");
+  /* background-image: url("../../assets/svgs/background_hd.1abd4d4e.svg"); */
   width: 100%;
   z-index: 3;
   background-size: 200%;
   background-position: center;
+ background-color: whitesmoke;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* nav top */
@@ -61,13 +63,13 @@
   font-size: 1rem;
   margin: 0 1rem;
   border-radius: 8px;
-  color: white;
+  color: #011daa;
   transition: all 0.3s ease;
 }
 
 .nav-right > button:nth-child(1):hover{
-    color: #011daa;
-    background: white;
+    color:white;
+    background:  #011daa;
 }
 
 .nav-right > button:nth-child(2) {
@@ -77,13 +79,13 @@
   border: none;
   font-size: 1rem;
   margin: 0 1rem;
-  color: #011daa;
-  background: white;
+  color: white;
+  background: #011daa;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .nav-right > button:nth-child(2):hover{
-    color: white;
+    color: #011daa;
     background: transparent;
 }

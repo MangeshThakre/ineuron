@@ -3,15 +3,39 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ margin: 5rem 0;
+ position: relative;
 }
+
+.Learning-sec>.previous{
+  position: absolute;
+  left:3%;
+  top: 70%;
+}
+.Learning-sec>.next{
+  position: absolute;
+  right:3%;
+  top: 70%;
+  }
 
 .Learning-sec-head > button {
   font-style: lower;
 }
 
+
+.Learning-head{
+    color: #022ab5;
+    margin: 2rem;
+}
+.Learning-head > h1{
+ font-size: 3rem;
+}
+
+
 .Learning-sec-container-head {
   text-align: center;
   margin-top: 2rem;
+
   line-height: 3;
 }
 .Learning-sec-container-head > h2 {
@@ -27,7 +51,8 @@
   overflow: scroll;
   width: 80%;
   height: 28rem;
-
+  /* justify-content: center; */
+overflow-y: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 }
@@ -47,12 +72,13 @@
   margin: 3rem;
   background-color: whitesmoke;
   border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .Learning-sec-box > div {
   margin: 1rem;
   width: 18rem;
-  height: 22rem;
+  height: 24rem;
 }
 
 .Learning-sec-box-body {
@@ -61,4 +87,12 @@
 
 .Learning-sec-box-body > h5:nth-child(1){
     color: #022ab5;
+}
+
+img[alt="arrowLefit"]{
+  width: 2rem;
+}
+
+img[alt="arrowRight"]{
+  width: 2rem;
 }

@@ -4,13 +4,23 @@
   align-items: center;
   flex-direction: column;
   /* background-color: gold; */
+  position: relative;
 }
 
+.SecFive > .previous {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+}
+.SecFive > .next {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
 .SecFive-header > h1 {
   color: #022ab5;
   font-size: 3rem;
 }
-
 .SecFive-box-container {
   /* background-color: aqua; */
   overflow: scroll;
@@ -25,12 +35,12 @@
   display: none;
 }
 
-.SecFive-box{
-    margin:  2rem 7rem 2rem 1rem;
-    height: 23rem;
+.SecFive-box {
+  margin: 2rem 7rem 2rem 1rem;
+  height: 23rem;
 }
-.SecFive-header{
-margin: 5rem 0;
+.SecFive-header {
+  margin: 5rem 0;
 }
 
 .SecFive-box:hover {
@@ -38,11 +48,12 @@ margin: 5rem 0;
   border-radius: 16px;
 }
 .SecFive-box > div {
-    margin: 20px;
+  margin: 20px;
   width: 16rem;
 }
 
-.SecFive-box-head  , .SecFive-box-body {
+.SecFive-box-head,
+.SecFive-box-body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,8 +65,7 @@ margin: 5rem 0;
   border-radius: 50%;
 }
 
-.SecFive-box-body{
-
+.SecFive-box-body {
 }
 
 .SecFive-box-body p {

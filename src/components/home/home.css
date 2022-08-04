@@ -83,12 +83,13 @@
   align-items: center;
   height: 2rem;
   margin: 10px;
-  background-color: antiquewhite;
+  background-color:whitesmoke;
   padding-left: 1rem;
   border-radius: 6px;
   transition: background-color 0.2s ease;
   cursor: pointer;
   justify-content: space-between;
+  color: #011daa;
 }
 .coureses-list > li:hover,
 .company-list > li:hover {
