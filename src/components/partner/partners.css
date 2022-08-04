@@ -1,0 +1,30 @@
+.partners-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.partners-head {
+  margin: 3rem;
+  color: #022ab5;
+}
+
+.partners-container{
+    display: flex;
+}
+.partners-img {
+  width: 10rem;
+  margin: 2rem;
+}
+
+@media (max-width: 500px) {
+  .partners-head> h1{
+    font-size: 1.5rem;
+  }
+  .partners-img {
+    width: 3rem;
+    margin: 10px;
+  }
+}

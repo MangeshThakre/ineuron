@@ -1,0 +1,51 @@
+.porduct-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.porduct-sec-head {
+  color: #022ab5;
+  margin: 3rem;
+}
+
+.Product-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 3rem;
+  width: 18rem;
+  cursor: pointer;
+}
+
+.Product-box >h3 {
+ margin: 1rem;
+}
+
+.Product-box> p{
+    color: gray;
+    text-align: center;
+}
+
+.porduct-sec> .container > .row > .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img[alt="internship"] {
+  width: 15rem;
+}
+
+img[alt="job"] {
+  width: 11rem;
+}
+img[alt="affilate"] {
+  width: 11rem;
+}
+
+
+

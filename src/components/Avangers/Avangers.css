@@ -1,0 +1,103 @@
+.Avangers-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+margin: 4rem 0;
+}
+
+.Avangers-sec-head{
+    color: #022ab5;
+    margin: 3rem;
+}
+
+.Avangers-sec-container {
+  width: 80%;
+  height: 33rem;
+  /* background-color: aqua; */
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.Avangers-sec-container::-webkit-scrollbar {
+display: none;
+}
+
+
+
+.Avangers-sec-box {
+  margin: 3rem;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  background-image: url("../../assets/svgs/5e387f889619c7aa4db2ed8c_Press\ Background\ Pattern.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: whitesmoke;
+}
+
+.Avangers-sec-container >.one{
+    background-color: #434954;
+}
+
+
+.Avangers-sec-container >.two{
+    background-color: hsla(240, 13.79%, 22.75%, 1.00);
+}
+
+
+.Avangers-sec-box > div {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 18rem;
+  height: 25rem;
+}
+
+.Avangers-sec-box-img {
+  margin: 1rem;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  height: 11rem;
+  width: 11rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.Avangers-sec-box > div > .Avangers-sec-box-img > img {
+  width: 11rem;
+  border-radius: 50%;
+}
+
+
+@media (max-width :400px) {
+    .Avangers-sec-box > div {
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 15rem;
+        height: 22rem;
+      }
+
+      .Avangers-sec-box {
+        margin: 3rem 2rem 3rem  1rem;
+        border-radius: 16px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor: pointer;
+        background-image: url("../../assets/svgs/5e387f889619c7aa4db2ed8c_Press\ Background\ Pattern.svg");
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        color: whitesmoke;
+      }
+
+
+}

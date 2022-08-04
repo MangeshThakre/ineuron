@@ -1,0 +1,64 @@
+.Learning-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Learning-sec-head > button {
+  font-style: lower;
+}
+
+.Learning-sec-container-head {
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 3;
+}
+.Learning-sec-container-head > h2 {
+  color: #022ab5;
+}
+.Learning-sec-container-head p {
+  font-size: 1.3rem;
+  color: rgb(60 73 88/1);
+}
+
+.Learning-sec-container {
+  display: flex;
+  overflow: scroll;
+  width: 80%;
+  height: 28rem;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.Learning-sec-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Learning-sec-box */
+
+.Learning-sec-box > div > img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.Learning-sec-box {
+  margin: 3rem;
+  background-color: whitesmoke;
+  border-radius: 16px;
+}
+
+.Learning-sec-box > div {
+  margin: 1rem;
+  width: 18rem;
+  height: 22rem;
+}
+
+.Learning-sec-box-body {
+  margin-top: 2rem;
+}
+
+.Learning-sec-box-body > h5:nth-child(1){
+    color: #022ab5;
+}

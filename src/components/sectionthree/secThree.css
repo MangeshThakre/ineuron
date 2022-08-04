@@ -1,0 +1,87 @@
+.secThreeContainer {
+  margin-top: 3rem;
+}
+
+.secThreeContainer > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secThreeContainer > .container > .row:nth-child(1) {
+  margin: 5rem 0;
+  color: #022ab5;
+}
+
+
+
+
+
+.secThreeContainer > .container > .row:nth-child(2) > .col {
+}
+
+.secThreeContainer > .container > .row:nth-child(2) > .col > .card {
+  margin: 1rem 4rem;
+  border: none;
+  width: 22rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.secThreeContainer > .container > .row:nth-child(2) > .col > .card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.secThreeContainer > .container > .row:nth-child(2) > .col > .card > img {
+  height: 10rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.secThreeContainer
+  > .container
+  > .row:nth-child(2)
+  > .col
+  > .card
+  > .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secThreeContainer
+  > .container
+  > .row:nth-child(2)
+  > .col
+  > .card
+  > .card-body
+  > .card-title {
+  color: #022ab5;
+  font-size: 4rem;
+}
+
+.secThreeContainer
+  > .container
+  > .row:nth-child(2)
+  > .col
+  > .card
+  > .card-body
+  .card-text {
+  text-align: center;
+  font-style: 2rem;
+}
+
+
+@media (max-width: 400px) { 
+  .secThreeContainer > .container > .row:nth-child(1)>.col>h1 {
+    color: #022ab5;
+    font-size: 150%;
+  }
+
+  .secThreeContainer > .container > .row:nth-child(2) > .col > .card{
+    margin: 1rem 2rem;
+  }
+
+  
+ }

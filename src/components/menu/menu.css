@@ -1,0 +1,31 @@
+/* nav menu */
+.nev-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  /* width: 60rem; */
+}
+
+.nev-menu > li {
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-container {
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 918px) {
+  .nev-menu {
+    display: none;
+  }
+ }

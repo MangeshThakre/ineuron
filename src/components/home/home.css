@@ -1,0 +1,221 @@
+.section-home {
+  width: 100%;
+  height: 37rem;
+  position: relative;
+  background: transparent;
+}
+
+/* popup */
+
+/* coursesPopup */
+.coursesPopup {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  height: 33rem;
+  left: 0;
+  z-index: 2;
+}
+
+/* companyPopup */
+.companyPopup {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 346px;
+  z-index: 2;
+}
+
+/* .coureses-list */
+.coureses-list {
+  list-style-type: none;
+  width: 17rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+  height: 30.1rem;
+  animation: myfirst 0.5s;
+  backdrop-filter: blur(10px);
+  padding: 0;
+}
+
+/* .company-list*/
+.company-list {
+  list-style-type: none;
+  width: 17rem;
+  position: relative;
+  animation: myfirst 0.5s;
+  backdrop-filter: blur(10px);
+  padding: 0;
+}
+
+.coureses-list::-webkit-scrollbar,
+.company-list::-webkit-scrollbar {
+  width: 3px;
+  height: 6px;
+}
+.coureses-list::-webkit-scrollbar-track,
+.company-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.coureses-list::-webkit-scrollbar-thumb,
+.company-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.coureses-list::-webkit-scrollbar-thumb:hover,
+.company-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+  /* display: none; */
+}
+.coureses-list::-webkit-scrollbar-thumb:active,
+.company-list::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.coureses-list > li,
+.company-list > li {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 10px;
+  background-color: antiquewhite;
+  padding-left: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.coureses-list > li:hover,
+.company-list > li:hover {
+  background-color: #7d8cbe;
+}
+
+.coursesPopupTriggre {
+  height: 20rem;
+  width: 1.5rem;
+  background-color: #28282b82;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.coursesPopupTriggre:hover,
+.companyPopupTriggre:hover {
+  background-color: #28282b;
+}
+.coursesPopupTriggre > div {
+  height: 15rem;
+  width: 3px;
+  background-color: azure;
+  border-radius: 22px;
+}
+
+.companyPopupTriggre > div {
+  height: 8rem;
+  width: 3px;
+  background-color: azure;
+  border-radius: 22px;
+}
+.companyPopupTriggre {
+  height: 12rem;
+  width: 1.5rem;
+  background-color: #28282b82;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* carousel  */
+
+.carousel {
+  height: 100%;
+}
+
+.text-white.card {
+  height: 37rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+ justify-content: center;
+}
+
+@media (max-width: 1364px) {
+  .text-white.card {
+    height: 37rem;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+#card-content {
+  margin-left: 20px;
+}
+
+#card-content > h5:nth-child(1) {
+  position: relative;
+}
+
+#card-content > h5:nth-child(1)::before {
+  content: "";
+  width: 126px;
+  height: 2px;
+  display: block;
+  background: #e6850f;
+  bottom: 0;
+  position: absolute;
+}
+
+.homeimage {
+  height: 22rem;
+}
+
+
+
+
+
+
+/* media */
+
+
+
+@media (max-width: 400px) { 
+  .text-white.card{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+  }
+
+  .text-white.card >img{
+    height: 12rem;
+  }
+
+  .coursesPopupTriggre{
+    display: none;
+  }
+
+  .companyPopupTriggre{
+    display: none;
+  }
+
+}
