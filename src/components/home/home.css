@@ -83,7 +83,7 @@
   align-items: center;
   height: 2rem;
   margin: 10px;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   padding-left: 1rem;
   border-radius: 6px;
   transition: background-color 0.2s ease;
@@ -91,6 +91,7 @@
   justify-content: space-between;
   color: #011daa;
 }
+
 .coureses-list > li:hover,
 .company-list > li:hover {
   background-color: #7d8cbe;
@@ -108,10 +109,12 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .coursesPopupTriggre:hover,
 .companyPopupTriggre:hover {
   background-color: #28282b;
 }
+
 .coursesPopupTriggre > div {
   height: 15rem;
   width: 3px;
@@ -144,29 +147,59 @@
   height: 100%;
 }
 
-.text-white.card {
-  height: 37rem;
-  background: transparent;
-  border: none;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
- justify-content: center;
-}
 
-@media (max-width: 1364px) {
+@media (min-width: 1364px){
+
   .text-white.card {
     height: 37rem;
     background: transparent;
     border: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
   }
 }
 
+.homeimage {
+  width: 50rem;
+}
 
+@media (max-width: 1364px) {
+  .text-white.card {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img-right.homeimage {
+    width: 90%;
+  }
+  .coursesPopupTriggre {
+    display: none;
+  }
+
+  .companyPopupTriggre {
+    display: none;
+  }
+
+  #card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#card-content> h5 , #card-content> h1{
+text-align: center;
+}
+#card-content>p{
+display: none;
+}
+
+}
 
 #card-content {
   margin-left: 20px;
@@ -186,37 +219,25 @@
   position: absolute;
 }
 
-.homeimage {
-  height: 22rem;
-}
-
-
-
-
 
 
 /* media */
 
-
-
-@media (max-width: 400px) { 
-  .text-white.card{
+@media (max-width: 400px) {
+  .text-white.card {
     display: flex;
     align-items: center;
-   justify-content: center;
-
+    justify-content: center;
   }
-
-  .text-white.card >img{
-    height: 12rem;
-  }
-
-  .coursesPopupTriggre{
+  .coursesPopupTriggre {
     display: none;
   }
 
-  .companyPopupTriggre{
+  .companyPopupTriggre {
     display: none;
+  }
+  .section-home{
+    height: 30rem;
   }
 
 }

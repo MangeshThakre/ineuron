@@ -12,12 +12,16 @@
   background-position: center;
  background-color: whitesmoke;
  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+ 
 }
 
 /* nav top */
 .navBar > .nav-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .navBar > .nav-top > img {
   width: 10rem;
@@ -88,4 +92,71 @@
 .nav-right > button:nth-child(2):hover{
     color: #011daa;
     background: transparent;
+}
+.threeDot{
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  width:90%;
+  height: 100vh;
+  z-index: 4;
+  background-color: whitesmoke;
+ left: 0;
+}
+.menu-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 1rem;
+}
+
+.menu-top >img{
+  width: 10rem;
+}
+
+.menu>ul{
+  line-height: 3;
+  list-style-type: none;
+  margin-top: 3rem;
+}
+
+.menu>ul>li{
+  padding-left: 1rem;
+  width: 15rem;
+}
+
+.menu>ul>li:hover{
+    background-color: rgb(188, 188, 188); 
+    border-radius: 10px;
+}
+.menu>ul>li:last-child:hover{
+  background-color: transparent;
+  /* width: max-content; */
+  width: 20rem;
+
+}
+
+.menu>ul > div >button{
+  margin-top: 2rem;
+}
+
+@media (max-width : 1295px) {
+  .nav-right {
+    display: none;
+  }
+.nav-search{
+  display: none;
+}
+.threeDot{
+  display: block;
+  transform: rotate(90deg);
+}
+.navBar{
+ padding: 0 1rem;
+}
+
 }

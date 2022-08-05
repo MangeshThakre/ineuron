@@ -218,7 +218,7 @@ function Learning() {
     {
       img: t1,
       name: "Android Technical Interview Preparation",
-      aut: "200+ courses, 500+ projects, raise your demand option,....",
+      aut: "",
       price: (
         <p>
           <CurrencyRupeeIcon />
@@ -295,24 +295,33 @@ function Learning() {
         <h1>What you will learn</h1>
       </div>
       <div className="Learning-sec-buttons">
-        <Stack spacing={3} direction="row">
+        <Stack
+          spacing={3}
+          direction="row"
+          sx={{
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Button
+            xs={{ margin: "2rem" }}
             onClick={() => setCurrrentPage("Live")}
             variant={currentPage == "Live" ? "contained" : "outlined"}
           >
-            Live Programs
+            Live
           </Button>
           <Button
             onClick={() => setCurrrentPage("Affortable")}
             variant={currentPage == "Affortable" ? "contained" : "outlined"}
           >
-            Affortable Programs
+            Affortable
           </Button>
           <Button
             onClick={() => setCurrrentPage("Community")}
             variant={currentPage == "Community" ? "contained" : "outlined"}
           >
-            Community Programs
+            Community
           </Button>
           <Button
             onClick={() => setCurrrentPage("OneNeuron")}

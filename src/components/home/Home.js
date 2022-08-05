@@ -113,77 +113,24 @@ function Home({ showCompany, setShowCompany, showCourses, setShowCourses }) {
         {showCompany ? companyList : null}
       </div>
 
-      {/* carosal */}
       <div className="home"></div>
 
-      <Carousel>
-        <Carousel.Item>
-          <div className="container home">
-            <Card className="text-white">
-              <Card.Img
-                className="homeimage"
-                variant="right"
-                src={homeImgone}
-              />
-              <div id="card-content">
-                <h5>Learn from the best of industry</h5>
-                <h1>
-                  Highest in quality, affordable
-                  <br /> in price
-                </h1>
-                <p>
-                  Digital entrepreneurs, Youtubers and content creators provide
-                  affordable courses across technologies.
-                </p>
-              </div>
-            </Card>
+      <div className="container home">
+        <Card className="text-white">
+          <Card.Img className="homeimage" variant="right" src={homeImgone} />
+          <div id="card-content">
+            <h5>Learn from the best of industry</h5>
+            <h1>
+              Highest in quality, affordable
+              <br /> in price
+            </h1>
+            <p>
+              Digital entrepreneurs, Youtubers and content creators provide
+              affordable courses across technologies.
+            </p>
           </div>
-        </Carousel.Item>
-        {/* <Carousel.Item>
-          <div className="container">
-            <Card className="text-white">
-              <Card.Img
-                className="homeimage"
-                variant="right"
-                src={homeImgone}
-              />
-              <div id="card-content">
-                <h5>Learn from the best of industry</h5>
-                <h1>
-                  Highest in quality, affordable
-                  <br /> in price
-                </h1>
-                <p>
-                  Digital entrepreneurs, Youtubers and content creators provide
-                  affordable courses across technologies.
-                </p>
-              </div>
-            </Card>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="container">
-            <Card className="text-white">
-              <Card.Img
-                className="homeimage"
-                variant="right"
-                src={homeImgone}
-              />
-              <div id="card-content">
-                <h5>Learn from the best of industry</h5>
-                <h1>
-                  Highest in quality, affordable
-                  <br /> in price
-                </h1>
-                <p>
-                  Digital entrepreneurs, Youtubers and content creators provide
-                  affordable courses across technologies.
-                </p>
-              </div>
-            </Card>
-          </div>
-        </Carousel.Item> */}
-      </Carousel>
+        </Card>
+      </div>
     </section>
   );
 }

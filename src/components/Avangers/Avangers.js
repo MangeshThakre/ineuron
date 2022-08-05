@@ -56,12 +56,7 @@ function Avangers() {
             <p>VP marketing</p>
             <span>
               <IconButton>
-                <a
-                  href="https://www.linkedin.com/in/amresh-bharti-571122166/"
-                  target="_blank"
-                >
-                  <LinkedInIcon />
-                </a>
+                <LinkedInIcon />
               </IconButton>
               <IconButton>
                 <YouTubeIcon />

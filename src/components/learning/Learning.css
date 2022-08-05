@@ -3,34 +3,32 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
- margin: 5rem 0;
- position: relative;
+  margin: 5rem 0;
+  position: relative;
 }
 
-.Learning-sec>.previous{
+.Learning-sec > .previous {
   position: absolute;
-  left:3%;
+  left: 3%;
   top: 70%;
 }
-.Learning-sec>.next{
+.Learning-sec > .next {
   position: absolute;
-  right:3%;
+  right: 3%;
   top: 70%;
-  }
+}
 
 .Learning-sec-head > button {
   font-style: lower;
 }
 
-
-.Learning-head{
-    color: #022ab5;
-    margin: 2rem;
+.Learning-head {
+  color: #022ab5;
+  margin: 2rem;
 }
-.Learning-head > h1{
- font-size: 3rem;
+.Learning-head > h1 {
+  font-size: 3rem;
 }
-
 
 .Learning-sec-container-head {
   text-align: center;
@@ -46,13 +44,18 @@
   color: rgb(60 73 88/1);
 }
 
+.Learning-sec-buttons button {
+  margin: 1rem;
+  text-transform: lowercase;
+}
+
 .Learning-sec-container {
   display: flex;
   overflow: scroll;
   width: 80%;
   height: 28rem;
   /* justify-content: center; */
-overflow-y: hidden;
+  overflow-y: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 }
@@ -85,14 +88,33 @@ overflow-y: hidden;
   margin-top: 2rem;
 }
 
-.Learning-sec-box-body > h5:nth-child(1){
-    color: #022ab5;
+.Learning-sec-box-body > h5:nth-child(1) {
+  color: #022ab5;
 }
 
-img[alt="arrowLefit"]{
+img[alt="arrowLefit"] {
   width: 2rem;
 }
 
-img[alt="arrowRight"]{
+img[alt="arrowRight"] {
   width: 2rem;
+}
+
+@media (max-width: 500px) {
+  .Learning-sec-buttons button {
+    margin: 1rem;
+    height: 2rem;
+    width: 6rem;
+    font-size: 70%;
+    /* text-transform: lowercase;   */
+  }
+
+  .Learning-sec-box > div {
+    margin: 1rem;
+    width: 15rem;
+    height: 18rem;
+  }
+
+  .Learning-sec-container {
+  }
 }

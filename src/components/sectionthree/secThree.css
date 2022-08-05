@@ -16,11 +16,6 @@
 
 
 
-
-
-.secThreeContainer > .container > .row:nth-child(2) > .col {
-}
-
 .secThreeContainer > .container > .row:nth-child(2) > .col > .card {
   margin: 1rem 4rem;
   border: none;
@@ -73,15 +68,25 @@
 }
 
 
-@media (max-width: 400px) { 
+.secThreeContainer > .container > .row:nth-child(2) > .col {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 500px) { 
   .secThreeContainer > .container > .row:nth-child(1)>.col>h1 {
     color: #022ab5;
-    font-size: 150%;
+    font-size: 140%;
   }
 
-  .secThreeContainer > .container > .row:nth-child(2) > .col > .card{
-    margin: 1rem 2rem;
-  }
 
+  .secThreeContainer > .container > .row:nth-child(2) > .col > .card {
+    margin: 1rem 1rem;
+    border: none;
+    /* width: 22rem; */
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
   
  }
