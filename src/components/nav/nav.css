@@ -132,6 +132,7 @@
 .menu>ul>li:hover{
     background-color: rgb(188, 188, 188); 
     border-radius: 10px;
+    cursor: pointer;
 }
 .menu>ul>li:last-child:hover{
   background-color: transparent;
