@@ -16,14 +16,13 @@
 }
 
 /* carosel  */
-.sectionOne  {
-  background-image: url(http://localhost:3000/static/media/background_hd.1abd4d4e.7bd8a1d5b7f0e7477e53.svg);
+.sectionOne {
+  background-image: url(https://ineuron-landing-page.herokuapp.com/static/media/background_hd.1abd4d4e.7bd8a1d5b7f0e7477e53.svg);
   background-repeat: no-repeat;
-  background-position:  bottom center;
+  background-position: bottom center;
   width: 100%;
 }
 
-
-.sectionthree{
+.sectionthree {
   height: 50rem;
 }
